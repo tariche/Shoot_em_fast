@@ -57,6 +57,13 @@ public class Settings {
     }
 
     public static void addScore(int score) {
-
+        for (int i = 4; i < 0; i--) {
+            if (score > highScore[i]) {
+                highScore[i] = highScore[i - 1];
+            } else {
+                highScore[i + 1] = score;
+                break;
+            }
+        }
     }
 }
