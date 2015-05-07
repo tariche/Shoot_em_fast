@@ -1,6 +1,7 @@
 package com.tarikzunic.shootemfast;
 
 import com.tarikzunic.framework.Audio;
+import com.tarikzunic.framework.FileIO;
 import com.tarikzunic.framework.Game;
 import com.tarikzunic.framework.Graphics;
 import com.tarikzunic.framework.Screen;
@@ -24,7 +25,8 @@ public class LoadingScreen extends Screen {
         Assets.target = g.newPixmap("target.png", Graphics.PixmapFormat.ARGB4444);
         Assets.shotSnd = game.getAudio().newSound("shotSnd.ogg");
         Assets.targetSnd = game.getAudio().newSound("targetSnd.ogg");
-
+        Settings.load(game.getFileIO());
+        game.setScreen(new ManiMenuScreen(game));
     }
 
     @Override
