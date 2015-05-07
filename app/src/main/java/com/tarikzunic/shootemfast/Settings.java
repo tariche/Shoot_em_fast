@@ -57,6 +57,6 @@ public class Settings {
     }
 
     public static void addScore(int score) {
-        
+
     }
 }
