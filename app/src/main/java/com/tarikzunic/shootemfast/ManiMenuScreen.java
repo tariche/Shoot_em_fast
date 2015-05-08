@@ -49,9 +49,13 @@ public class ManiMenuScreen extends Screen {
         Graphics g = game.getGraphics();
 
         g.drawPixmap(Assets.background, 0, 0);
-        g.drawPixmap(Assets.buttons, 0, 0, 0, 160, 80, 80);
         g.drawPixmap(Assets.name, 130, 150);
-        g.drawPixmap(Assets.mainmenu,130,150);
+        g.drawPixmap(Assets.mainmenu,100,400);
+        if (Settings.soundEabled) {
+            g.drawPixmap(Assets.buttons, 0, 0, 80, 0, 81, 81);
+        } else {
+            g.drawPixmap(Assets.buttons, 0, 0, 0, 0, 81, 81);
+        }
     }
 
     @Override

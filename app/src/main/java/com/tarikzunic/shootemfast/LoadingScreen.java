@@ -18,6 +18,7 @@ public class LoadingScreen extends Screen {
     public void update(float deltaTime) {
         Graphics g = game.getGraphics();
         Assets.background = g.newPixmap("background.png", Graphics.PixmapFormat.RGB565);
+        Assets.hlpbackground = g.newPixmap("hlpbackground.png", Graphics.PixmapFormat.RGB565);
         Assets.buttons = g.newPixmap("buttons.png", Graphics.PixmapFormat.ARGB4444);
         Assets.mainmenu = g.newPixmap("mainmenu.png", Graphics.PixmapFormat.ARGB4444);
         Assets.name = g.newPixmap("name.png", Graphics.PixmapFormat.ARGB4444);

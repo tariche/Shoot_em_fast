@@ -33,8 +33,8 @@ public class HelpScreen extends Screen {
     public void present(float deltaTime) {
         Graphics g = game.getGraphics();
 
-        g.drawPixmap(Assets.background, 0, 0);
-        g.drawPixmap(Assets.buttons, 0, 0, 80, 80, 80, 80);
+        g.drawPixmap(Assets.hlpbackground, 0, 0);
+        g.drawPixmap(Assets.buttons, 0, 0, 80, 80, 81, 81);
     }
 
     @Override

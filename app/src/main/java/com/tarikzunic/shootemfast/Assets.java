@@ -8,6 +8,7 @@ import com.tarikzunic.framework.Sound;
  */
 public class Assets {
     public static Pixmap background;
+    public static Pixmap hlpbackground;
     public static Pixmap buttons;
     public static Pixmap mainmenu;
     public static Pixmap name;
