@@ -8,6 +8,7 @@ import android.graphics.BitmapFactory.Options;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.graphics.Typeface;
 
 import com.tarikzunic.framework.Graphics;
 import com.tarikzunic.framework.Pixmap;
@@ -118,6 +119,27 @@ public class AndroidGraphics implements Graphics {
     @Override
     public void drawPixmap(Pixmap pixmap, int x, int y) {
         canvas.drawBitmap(((AndroidPixmap) pixmap).bitmap, x, y, null);
+    }
+
+    @Override
+    public void drawText(String text, int x, int y, Paint paint) {
+        canvas.drawText(text, x, y, paint);
+    }
+
+    @Override
+    public Paint setPaintText(String font, int color, int size) {
+        Typeface typeface = Typeface.createFromAsset(assets, font);
+        paint.setColor(color);
+        paint.setTypeface(typeface);
+        paint.setTextSize(size);
+        return paint;
+    }
+
+    @Override
+    public Rect textBounds(String text, Paint paint) {
+        Rect bounds = new Rect();
+        paint.getTextBounds(text, 0, text.length(), bounds);
+        return bounds;
     }
 
     @Override

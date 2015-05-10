@@ -1,5 +1,7 @@
 package com.tarikzunic.shootemfast;
 
+import android.graphics.Typeface;
+
 import com.tarikzunic.framework.Pixmap;
 import com.tarikzunic.framework.Sound;
 
@@ -14,7 +16,11 @@ public class Assets {
     public static Pixmap name;
     public static Pixmap rifle;
     public static Pixmap target;
+    public static Pixmap gameover;
+    public static Pixmap missed;
 
     public static Sound targetSnd;
     public static Sound shotSnd;
+
+//    public static Typeface font;
 }

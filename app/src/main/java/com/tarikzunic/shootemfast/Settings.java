@@ -13,16 +13,18 @@ import java.io.OutputStreamWriter;
  */
 public class Settings {
     public static boolean soundEabled = true;
-    public static int[] highScore = new int[]{100, 80, 50, 30, 10};
+//    public static int[] highScore = new int[]{100, 80, 50, 30, 10};
+    private static int maxScore = 0;
 
     public static void load(FileIO files) {
         BufferedReader in = null;
         try {
             in = new BufferedReader(new InputStreamReader(files.readFile(".shootemfast")));
             soundEabled = Boolean.parseBoolean(in.readLine());
-            for (int i = 0; i < 5; i++) {
+            maxScore = Integer.parseInt(in.readLine());
+            /*for (int i = 0; i < 5; i++) {
                 highScore[i] = Integer.parseInt(in.readLine());
-            }
+            }*/
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -40,10 +42,12 @@ public class Settings {
         try {
             out = new BufferedWriter(new OutputStreamWriter(files.writeAsset(".shootemfast")));
             out.write(Boolean.toString(soundEabled));
-            for (int i = 0; i < 5; i++) {
+            out.newLine();
+            out.write(Integer.toString(maxScore));
+            /*for (int i = 0; i < 5; i++) {
                 out.newLine();
                 out.write(Integer.toString(highScore[i]));
-            }
+            }*/
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -57,13 +61,16 @@ public class Settings {
     }
 
     public static void addScore(int score) {
-        for (int i = 4; i < 0; i--) {
+        if (score > maxScore) {
+            maxScore = score;
+        }
+       /* for (int i = 4; i < 0; i--) {
             if (score > highScore[i]) {
                 highScore[i] = highScore[i - 1];
             } else {
                 highScore[i + 1] = score;
                 break;
             }
-        }
+        }*/
     }
 }

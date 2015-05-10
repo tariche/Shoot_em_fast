@@ -1,5 +1,8 @@
 package com.tarikzunic.framework;
 
+import android.graphics.Paint;
+import android.graphics.Rect;
+
 /**
  * Created by Tarik on 27.3.2015.
  */
@@ -14,6 +17,9 @@ public interface Graphics {
     public void drawRect(int x, int y, int width, int hight, int color);
     public void drawPixmap(Pixmap pixmap, int x, int y, int srcX, int srcY, int srcWidth, int srcHight);
     public void drawPixmap(Pixmap pixmap, int x, int y);
+    public void drawText(String text, int x, int y, Paint paint);
+    public Paint setPaintText(String font, int color, int size);
+    public Rect textBounds(String text, Paint paint);
     public int getWidth();
     public int getHight();
 }

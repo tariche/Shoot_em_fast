@@ -1,6 +1,7 @@
 package com.tarikzunic.shootemfast;
 
 import android.app.Activity;
+import android.content.Context;
 
 import com.tarikzunic.framework.Screen;
 import com.tarikzunic.framework.imp.AndroidGame;

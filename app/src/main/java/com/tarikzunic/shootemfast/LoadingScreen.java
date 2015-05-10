@@ -1,5 +1,8 @@
 package com.tarikzunic.shootemfast;
 
+import android.content.Context;
+import android.graphics.Typeface;
+
 import com.tarikzunic.framework.Audio;
 import com.tarikzunic.framework.FileIO;
 import com.tarikzunic.framework.Game;
@@ -21,7 +24,9 @@ public class LoadingScreen extends Screen {
         Assets.hlpbackground = g.newPixmap("hlpbackground.png", Graphics.PixmapFormat.RGB565);
         Assets.buttons = g.newPixmap("buttons.png", Graphics.PixmapFormat.ARGB4444);
         Assets.mainmenu = g.newPixmap("mainmenu.png", Graphics.PixmapFormat.ARGB4444);
+        Assets.gameover = g.newPixmap("gameover.png", Graphics.PixmapFormat.ARGB4444);
         Assets.name = g.newPixmap("name.png", Graphics.PixmapFormat.ARGB4444);
+        Assets.missed = g.newPixmap("missed.png", Graphics.PixmapFormat.ARGB4444);
         Assets.rifle = g.newPixmap("rifle.png", Graphics.PixmapFormat.ARGB4444);
         Assets.target = g.newPixmap("target.png", Graphics.PixmapFormat.ARGB4444);
         Assets.shotSnd = game.getAudio().newSound("shotSnd.ogg");
