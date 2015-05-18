@@ -16,6 +16,7 @@ public class Assets {
     public static Pixmap name;
     public static Pixmap rifle;
     public static Pixmap target;
+    public static Pixmap targets;
     public static Pixmap gameover;
     public static Pixmap missed;
 

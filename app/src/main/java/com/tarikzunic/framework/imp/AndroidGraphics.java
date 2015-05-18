@@ -25,14 +25,19 @@ public class AndroidGraphics implements Graphics {
     Bitmap frameBuffer;
     Canvas canvas;
     Paint paint;
+    Paint textPaint;
+    Typeface typeface;
     Rect srcRect = new Rect();
     Rect dstRect = new Rect();
+    Rect bounds = null;
 
     public AndroidGraphics(AssetManager assets, Bitmap frameBuffer) {
         this.assets = assets;
         this.frameBuffer = frameBuffer;
         this.canvas = new Canvas(frameBuffer);
         this.paint = new Paint();
+        this.textPaint = new Paint();
+        this.typeface = Typeface.createFromAsset(assets, "opensans.ttf");
     }
 
     @Override
@@ -99,6 +104,7 @@ public class AndroidGraphics implements Graphics {
     public void drawRect(int x, int y, int width, int hight, int color) {
         paint.setColor(color);
         paint.setStyle(Paint.Style.FILL);
+        canvas.drawRect(x, y, x + width - 1, y + hight - 1, paint);
     }
 
     @Override
@@ -127,17 +133,16 @@ public class AndroidGraphics implements Graphics {
     }
 
     @Override
-    public Paint setPaintText(String font, int color, int size) {
-        Typeface typeface = Typeface.createFromAsset(assets, font);
-        paint.setColor(color);
-        paint.setTypeface(typeface);
-        paint.setTextSize(size);
-        return paint;
+    public Paint setPaintText(int color, int size) {
+        textPaint.setColor(color);
+        textPaint.setTypeface(typeface);
+        textPaint.setTextSize(size);
+        return textPaint;
     }
 
     @Override
     public Rect textBounds(String text, Paint paint) {
-        Rect bounds = new Rect();
+        bounds = new Rect();
         paint.getTextBounds(text, 0, text.length(), bounds);
         return bounds;
     }

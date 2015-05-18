@@ -10,6 +10,7 @@ import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 
 import com.tarikzunic.framework.Audio;
 import com.tarikzunic.framework.FileIO;
@@ -66,16 +67,16 @@ public abstract class AndroidGame extends Activity implements Game {
         screen = getStartScreen();
         setContentView(renderView);
 
-//        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        PowerManager powerManager = (PowerManager) getSystemService(POWER_SERVICE);
-        wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "GLGame");
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        /*PowerManager powerManager = (PowerManager) getSystemService(POWER_SERVICE);
+        wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "GLGame");*/
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         decor.setSystemUiVisibility(uiOptions);
-        wakeLock.acquire();
+//        wakeLock.acquire();
         screen.resume();
         renderView.resume();
     }
@@ -83,7 +84,7 @@ public abstract class AndroidGame extends Activity implements Game {
     @Override
     protected void onPause() {
         super.onPause();
-        wakeLock.release();
+//        wakeLock.release();
         renderView.pause();
         screen.pause();
 

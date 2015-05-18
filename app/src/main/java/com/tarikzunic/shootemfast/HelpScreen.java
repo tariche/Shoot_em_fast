@@ -51,4 +51,9 @@ public class HelpScreen extends Screen {
     public void dispose() {
 
     }
+
+    @Override
+    public void backButton() {
+
+    }
 }

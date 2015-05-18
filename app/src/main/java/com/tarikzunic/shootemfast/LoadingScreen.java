@@ -29,6 +29,7 @@ public class LoadingScreen extends Screen {
         Assets.missed = g.newPixmap("missed.png", Graphics.PixmapFormat.ARGB4444);
         Assets.rifle = g.newPixmap("rifle.png", Graphics.PixmapFormat.ARGB4444);
         Assets.target = g.newPixmap("target.png", Graphics.PixmapFormat.ARGB4444);
+        Assets.targets = g.newPixmap("targets.png", Graphics.PixmapFormat.ARGB4444);
         Assets.shotSnd = game.getAudio().newSound("shotSnd.ogg");
         Assets.targetSnd = game.getAudio().newSound("targetSnd.ogg");
         Settings.load(game.getFileIO());
@@ -52,6 +53,11 @@ public class LoadingScreen extends Screen {
 
     @Override
     public void dispose() {
+
+    }
+
+    @Override
+    public void backButton() {
 
     }
 }

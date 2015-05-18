@@ -14,4 +14,10 @@ public class ShootemGame extends AndroidGame {
     public Screen getStartScreen() {
         return new LoadingScreen(this);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        getCurrentScreen().backButton();
+    }
 }

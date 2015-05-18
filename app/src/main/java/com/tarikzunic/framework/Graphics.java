@@ -18,7 +18,7 @@ public interface Graphics {
     public void drawPixmap(Pixmap pixmap, int x, int y, int srcX, int srcY, int srcWidth, int srcHight);
     public void drawPixmap(Pixmap pixmap, int x, int y);
     public void drawText(String text, int x, int y, Paint paint);
-    public Paint setPaintText(String font, int color, int size);
+    public Paint setPaintText(int color, int size);
     public Rect textBounds(String text, Paint paint);
     public int getWidth();
     public int getHight();

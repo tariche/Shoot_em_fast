@@ -5,7 +5,6 @@ import android.graphics.Paint;
 
 import com.tarikzunic.framework.Game;
 import com.tarikzunic.framework.Graphics;
-import com.tarikzunic.framework.Input;
 import com.tarikzunic.framework.Input.TouchEvent;
 import com.tarikzunic.framework.Screen;
 
@@ -23,10 +22,17 @@ public class GameScreen extends Screen {
     GameStatus status = GameStatus.Running;
     World world;
     int oldScore = 0;
+    String printScore = "0";
+    String textScore = "SCORE:";
+    int textScoreHeight;
+    Paint paint;
+
 
     public GameScreen(Game game) {
         super(game);
         world = new World();
+        paint = game.getGraphics().setPaintText(Color.BLUE, 24);
+        textScoreHeight = game.getGraphics().textBounds(textScore, paint).height();
     }
 
     @Override
@@ -61,6 +67,9 @@ public class GameScreen extends Screen {
 
             if (touchEvent.type == TouchEvent.TOUCH_DOWN) {
                 if (touchEvent.x > 152 && touchEvent.x < 330 && touchEvent.y > 596) {
+                    if (Settings.soundEabled) {
+                        Assets.shotSnd.play(1);
+                    }
                     world.shot = true;
                 }
                 /*if (touchEvent.x > 81 && touchEvent.y > 81) {
@@ -81,6 +90,11 @@ public class GameScreen extends Screen {
                 Assets.targetSnd.play(1);
             }
         }
+    }
+
+    private void nullify() {
+        paint = null;
+        System.gc();
     }
 
     /*private void updatePaused(List<TouchEvent> touchEvents) {
@@ -112,6 +126,7 @@ public class GameScreen extends Screen {
                         game.setScreen(new HelpScreen(game));
                     }
                     if (touchEvent.y > 516 && touchEvent.y < 574) {
+                        nullify();
                         game.setScreen(new ManiMenuScreen(game));
                     }
                 }
@@ -148,19 +163,32 @@ public class GameScreen extends Screen {
         for (int i = 0; i < len; i++) {
             Target target = world.targetQue.targets.get(i);
             if (target.isVisible) {
-                g.drawPixmap(Assets.target, target.x, target.y);
+                g.drawPixmap(Assets.targets, target.x, target.y, 46 * target.current, 0, 47, 96);
             }
         }
 
-        drawCurrentScore(oldScore);
+        int bulletsLen = world.bullets.size();
+        if (bulletsLen != 0) {
+            for (int i = 0; i < bulletsLen; i++) {
+                Bullet bullet = world.bullets.get(i);
+                g.drawRect(bullet.x - 2, bullet.y - 2, 5, 8, Color.BLACK);
+            }
+        }
+       /* if (world.bullet.visible) {
+            Bullet bullet = world.bullet;
+            g.drawRect(bullet.x - 2, bullet.y - 2, 5, 8, Color.BLACK);
+        }*/
+
+        drawCurrentScore();
     }
 
-    private void drawCurrentScore(int score) {
+    private void drawCurrentScore() {
         Graphics g = game.getGraphics();
-        Paint paint = g.setPaintText("opensans.ttf", Color.BLUE, 24);
-        g.drawText("SCORE:", 20, 695 + g.textBounds("SCORE:", paint).height(), paint);
-        String s = "" + oldScore;
-        g.drawText(s, 20, 700 + 2 * g.textBounds(s, paint).height(), paint);
+        g.drawText(textScore, 20, 5 + textScoreHeight, paint);
+        if (Integer.parseInt(printScore) != oldScore) {
+            printScore = "" + oldScore;
+        }
+        g.drawText(printScore, 20, 10 + 2 * textScoreHeight, paint);
     }
 
     /*private void drawPaused() {
@@ -191,6 +219,11 @@ public class GameScreen extends Screen {
 
     @Override
     public void dispose() {
+
+    }
+
+    @Override
+    public void backButton() {
 
     }
 }

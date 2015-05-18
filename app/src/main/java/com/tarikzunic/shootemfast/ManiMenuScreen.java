@@ -1,5 +1,6 @@
 package com.tarikzunic.shootemfast;
 
+import com.tarikzunic.framework.FileIO;
 import com.tarikzunic.framework.Game;
 import com.tarikzunic.framework.Graphics;
 import com.tarikzunic.framework.Input.TouchEvent;
@@ -60,7 +61,7 @@ public class ManiMenuScreen extends Screen {
 
     @Override
     public void pause() {
-
+        Settings.save(game.getFileIO());
     }
 
     @Override
@@ -71,5 +72,10 @@ public class ManiMenuScreen extends Screen {
     @Override
     public void dispose() {
 
+    }
+
+    @Override
+    public void backButton() {
+        android.os.Process.killProcess(android.os.Process.myPid());
     }
 }

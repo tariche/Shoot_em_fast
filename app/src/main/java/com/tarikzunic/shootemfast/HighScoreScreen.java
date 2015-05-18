@@ -35,4 +35,9 @@ public class HighScoreScreen extends Screen {
     public void dispose() {
 
     }
+
+    @Override
+    public void backButton() {
+
+    }
 }

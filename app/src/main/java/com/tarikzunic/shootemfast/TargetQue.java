@@ -10,6 +10,7 @@ import java.util.Random;
 public class TargetQue {
     List<Target> targets = new ArrayList<>(10);
     Random r = new Random();
+    int success = 0;
 
     public TargetQue() {
         for (int i = 0; i < 10; i++) {
@@ -20,20 +21,31 @@ public class TargetQue {
     public void move() {
         for (int i = 0; i < 10; i++) {
             Target target = targets.get(i);
-            target.x -= 1;
+            target.x -= 2;
+            target.r.set(target.x, 65, target.x + 46, 79);
             if (target.x == 0) {
                 target.x = 480;
+                target.current = 0;
                 target.isShot = false;
                 target.isVisible = r.nextBoolean();
             }
 
-            if (target.x < 240 && (target.x + 48) > 240) {
+            if (target.isVisible && target.x < 300 && !target.isShot) {
                 target.inRange = true;
+            }
+
+            if (target.isShot) {
+                ++target.current;
+                if (target.current == 4) {
+                    target.current = 0;
+                    target.isVisible = false;
+                    target.isShot = true;
+                }
             }
         }
     }
 
-    public int shot() {
+    /*public int shot() {
         int success = 0;
         for (int i = 0; i < 10; i++) {
             Target target = targets.get(i);
@@ -54,15 +66,46 @@ public class TargetQue {
             }
         }
         return success;
-    }
+    }*/
 
     public boolean targetEcsaped() {
         for (int i = 0; i < 10; i++) {
             Target target = targets.get(i);
-            if ((target.x + 48) < 240 && target.isVisible) {
+            if ((target.x + 48) < 200 && target.isVisible) {
                 return true;
             }
         }
         return false;
+    }
+
+    public boolean checkCollision(Bullet bullet) {
+        for (int i = 0; i < 10; i++) {
+            Target target = targets.get(i);
+            if (target.inRange) {
+                if (target.r.intersect(bullet.r)) {
+                    target.inRange = false;
+                    target.isShot = true;
+                    shot(target, bullet);
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    private void shot(Target target, Bullet bullet) {
+        success = 0;
+        int targetX = target.x;
+        if (bullet.x > targetX && bullet.x < targetX + 46) {
+            success += 1;
+            if (bullet.x > targetX + 8 && bullet.x < targetX + 38) {
+                success += 1;
+                if (bullet.x > targetX + 16 && bullet.x < targetX + 30) {
+                    success += 1;
+                }
+            }
+//            target.isShot = true;
+//            target.isVisible = false;
+        }
     }
 }
