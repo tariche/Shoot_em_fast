@@ -6,12 +6,18 @@ import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.os.Build.VERSION;
 import android.os.Bundle;
+import android.os.Looper;
 import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.RelativeLayout;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 import com.tarikzunic.framework.Audio;
 import com.tarikzunic.framework.FileIO;
 import com.tarikzunic.framework.Game;
@@ -28,10 +34,12 @@ public abstract class AndroidGame extends Activity implements Game {
     Audio audio;
     Input input;
     FileIO fileIO;
+    Advertising advertising;
     Screen screen;
     WakeLock wakeLock;
     View decor;
     int uiOptions;
+    private AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,8 +72,21 @@ public abstract class AndroidGame extends Activity implements Game {
         fileIO = new AndroidFileIO(this);
         audio = new AndroidAudio(this);
         input = new AndroidInput(this, renderView, scaleX, scaleY);
+        advertising = new Advertising(this);
         screen = getStartScreen();
-        setContentView(renderView);
+
+        adView = new AdView(this);
+        adView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
+        adView.setAdSize(AdSize.SMART_BANNER);
+
+        RelativeLayout mainLayout = new RelativeLayout(this);
+        mainLayout.addView(renderView);
+
+        RelativeLayout.LayoutParams addParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        addParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+        mainLayout.addView(adView, addParams);
+
+        setContentView(mainLayout);//(renderView);
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         /*PowerManager powerManager = (PowerManager) getSystemService(POWER_SERVICE);
@@ -76,7 +97,7 @@ public abstract class AndroidGame extends Activity implements Game {
     protected void onResume() {
         super.onResume();
         decor.setSystemUiVisibility(uiOptions);
-//        wakeLock.acquire();
+//        showBanner();
         screen.resume();
         renderView.resume();
     }
@@ -85,6 +106,7 @@ public abstract class AndroidGame extends Activity implements Game {
     protected void onPause() {
         super.onPause();
 //        wakeLock.release();
+//        advertising.showAd();
         renderView.pause();
         screen.pause();
 
@@ -113,6 +135,16 @@ public abstract class AndroidGame extends Activity implements Game {
     }
 
     @Override
+    public Advertising getAdvertising() {
+        return advertising;
+    }
+
+    /*@Override
+    public AdView getAdView() {
+        return adView;
+    }*/
+
+    @Override
     public void setScreen(Screen screen) {
         if (screen == null)
             throw new IllegalArgumentException("Screen must not be null");
@@ -129,4 +161,43 @@ public abstract class AndroidGame extends Activity implements Game {
         return screen;
     }
 
+    /*public void showInterstitial() {
+        if(Looper.myLooper() != Looper.getMainLooper()) {
+            runOnUiThread(new Runnable() {
+                @Override public void run() {
+                    advertising.showAd();
+                }
+            });
+        } else {
+            advertising.showAd();
+        }
+    }*/
+
+    @Override
+    public void showBanner() {
+        if(Looper.myLooper() != Looper.getMainLooper()) {
+            runOnUiThread(new Runnable() {
+                @Override public void run() {
+                    adView.setVisibility(AdView.VISIBLE);
+                    adView.loadAd(new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build());
+                }
+            });
+        } else {
+            adView.setVisibility(AdView.VISIBLE);
+            adView.loadAd(new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build());
+        }
+    }
+
+    @Override
+    public void hideBunner() {
+        if(Looper.myLooper() != Looper.getMainLooper()) {
+            runOnUiThread(new Runnable() {
+                @Override public void run() {
+                    adView.setVisibility(AdView.GONE);
+                }
+            });
+        } else {
+            adView.setVisibility(AdView.GONE);
+        }
+    }
 }

@@ -25,6 +25,7 @@ public class ManiMenuScreen extends Screen {
             if (event.type == TouchEvent.TOUCH_UP) {
                 if (event.x > 100 && event.x < 380) {
                     if (event.y > 400 && event.y < 463) {
+                        game.hideBunner();
                         game.setScreen(new GameScreen(game));
                     }
                     if (event.y > 464 && event.y < 528) {

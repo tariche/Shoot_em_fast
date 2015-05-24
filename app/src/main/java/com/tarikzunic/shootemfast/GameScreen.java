@@ -2,6 +2,9 @@ package com.tarikzunic.shootemfast;
 
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 
 import com.tarikzunic.framework.Game;
 import com.tarikzunic.framework.Graphics;
@@ -19,6 +22,10 @@ public class GameScreen extends Screen {
         GameOver
     }
 
+    public static final int SHOW_INTERSTITIAL = 0;
+    /*public static final int SHOW_BANNER = 1;
+    public static final int HIDE_BANNER = 2;*/
+
     GameStatus status = GameStatus.Running;
     World world;
     int oldScore = 0;
@@ -26,13 +33,34 @@ public class GameScreen extends Screen {
     String textScore = "SCORE:";
     int textScoreHeight;
     Paint paint;
+    static int adCount = 0;
+    static boolean showBanner = false;
+    Handler handler;
 
 
-    public GameScreen(Game game) {
+    public GameScreen(final Game game) {
         super(game);
         world = new World();
         paint = game.getGraphics().setPaintText(Color.BLUE, 24);
         textScoreHeight = game.getGraphics().textBounds(textScore, paint).height();
+        handler = new Handler(Looper.getMainLooper()){
+            @Override
+            public void handleMessage(Message msg) {
+                switch (msg.what) {
+                    case SHOW_INTERSTITIAL:
+                        game.getAdvertising().showAd();
+                        break;
+                    /*case SHOW_BANNER:
+                        game.showBanner(game.getAdView());
+                        break;
+                    case HIDE_BANNER:
+                        game.hideBunner(game.getAdView());
+                        break;*/
+                    default:
+                        super.handleMessage(msg);
+                }
+            }
+        };
     }
 
     @Override
@@ -81,6 +109,8 @@ public class GameScreen extends Screen {
         world.update(deltaTime);
 
         if (world.gameOver) {
+            showBanner = true;
+            adCount += 1;
             status = GameStatus.GameOver;
         }
 
@@ -120,6 +150,8 @@ public class GameScreen extends Screen {
                 }
                 if (touchEvent.x > 165 && touchEvent.x < 315) {
                     if (touchEvent.y > 400 && touchEvent.y < 458) {
+//                        handler.sendEmptyMessage(HIDE_BANNER);
+                        game.hideBunner();
                         game.setScreen(new GameScreen(game));
                     }
                     if (touchEvent.y > 458 && touchEvent.y < 516) {
@@ -158,6 +190,7 @@ public class GameScreen extends Screen {
     }*/
 
     private void drawRunning() {
+
         Graphics g = game.getGraphics();
         int len = world.targetQue.targets.size();
         for (int i = 0; i < len; i++) {
@@ -196,6 +229,16 @@ public class GameScreen extends Screen {
     }*/
 
     private void drawGameOver() {
+        if (adCount == 3) {
+            adCount = 0;
+            handler.sendEmptyMessage(SHOW_INTERSTITIAL);
+//            game.showInterstitial();
+        } else if (showBanner) {
+            showBanner = false;
+//            handler.sendEmptyMessage(SHOW_BANNER);
+            game.showBanner();
+        }
+
         Graphics g = game.getGraphics();
         g.drawPixmap(Assets.missed, 145, 200);
         g.drawPixmap(Assets.gameover, 165, 400);
