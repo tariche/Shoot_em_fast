@@ -1,0 +1,768 @@
+CURRENT STATS:
+  * com.android.systemui / u0a22 / v22:
+           TOTAL: 100% (62MB-66MB-76MB/59MB-63MB-73MB over 8)
+      Persistent: 100% (62MB-66MB-76MB/59MB-63MB-73MB over 8)
+  * com.google.android.inputmethod.latin / u0a57 / v21203:
+           TOTAL: 100% (29MB-31MB-34MB/28MB-29MB-32MB over 9)
+          Imp Fg: 22% (34MB-34MB-34MB/32MB-32MB-32MB over 3)
+          Imp Bg: 78% (29MB-30MB-30MB/28MB-28MB-28MB over 6)
+  * com.google.android.googlequicksearchbox:interactor / u0a24 / v300405835:
+           TOTAL: 100% (2,9MB-3,3MB-3,5MB/2,2MB-2,2MB-2,2MB over 9)
+          Imp Fg: 100% (2,9MB-3,3MB-3,5MB/2,2MB-2,2MB-2,2MB over 9)
+  * com.google.process.gapps / u0a8 / v7329436:
+           TOTAL: 100% (17MB-17MB-18MB/15MB-15MB-16MB over 9)
+          Imp Fg: 100% (17MB-17MB-18MB/15MB-15MB-16MB over 9)
+  * com.android.nfc / 1027 / v22:
+           TOTAL: 100% (5,0MB-8,4MB-10MB/4,1MB-7,3MB-8,8MB over 8)
+      Persistent: 100% (5,0MB-8,4MB-10MB/4,1MB-7,3MB-8,8MB over 8)
+  * system / 1000 / v22:
+           TOTAL: 100% (54MB-62MB-78MB/50MB-58MB-72MB over 8)
+      Persistent: 100% (54MB-62MB-78MB/50MB-58MB-72MB over 8)
+  * com.viber.voip / u0a100 / v92:
+           TOTAL: 100% (14MB-43MB-103MB/12MB-40MB-95MB over 8)
+         Service: 100% (14MB-43MB-103MB/12MB-40MB-95MB over 8)
+      Service Rs: 0,05%
+  * com.android.phone / 1001 / v22:
+           TOTAL: 100% (10MB-12MB-15MB/9,3MB-11MB-14MB over 8)
+      Persistent: 100% (10MB-12MB-15MB/9,3MB-11MB-14MB over 8)
+  * com.google.android.gms.persistent / u0a8 / v7329436:
+           TOTAL: 100% (20MB-21MB-21MB/18MB-18MB-19MB over 9)
+          Imp Fg: 100% (20MB-21MB-21MB/18MB-18MB-19MB over 9)
+  * com.droid27.transparentclockweather / u0a108 / v124:
+           TOTAL: 100% (6,8MB-7,6MB-8,4MB/5,6MB-6,3MB-7,1MB over 8)
+         Service: 100% (6,8MB-7,6MB-8,4MB/5,6MB-6,3MB-7,1MB over 8)
+  * com.google.android.googlequicksearchbox:search / u0a24 / v300405835:
+           TOTAL: 100% (18MB-20MB-21MB/14MB-16MB-19MB over 12)
+          Imp Fg: 9,3% (19MB-20MB-21MB/15MB-17MB-19MB over 4)
+         Service: 91% (18MB-19MB-21MB/14MB-15MB-18MB over 8)
+  * com.android.vending / u0a18 / v80341200:
+           TOTAL: 42% (12MB-13MB-13MB/10MB-11MB-11MB over 8)
+             Top: 42% (12MB-13MB-13MB/10MB-11MB-11MB over 8)
+          Imp Fg: 0,01%
+         Service: 0,44%
+        Receiver: 0,01%
+      (Last Act): 21% (11MB-11MB-12MB/9,0MB-9,6MB-9,9MB over 3)
+        (Cached): 37% (9,7MB-12MB-14MB/8,1MB-10MB-13MB over 2)
+  * com.yodo1.crossyroad / u0a113 / v33:
+           TOTAL: 42% (226MB-257MB-277MB/214MB-245MB-265MB over 8)
+             Top: 42% (226MB-257MB-277MB/214MB-245MB-265MB over 8)
+      (Last Act): 21% (212MB-234MB-276MB/201MB-222MB-263MB over 3)
+        (Cached): 4,3% (212MB-212MB-212MB/201MB-201MB-201MB over 1)
+  * com.google.android.gms / u0a8 / v7329436:
+           TOTAL: 32% (21MB-25MB-30MB/16MB-21MB-26MB over 9)
+             Top: 0,01%
+          Imp Fg: 29% (21MB-25MB-30MB/16MB-21MB-26MB over 9)
+          Imp Bg: 0,10%
+         Service: 2,6%
+        Receiver: 0,01%
+        (Cached): 67% (20MB-22MB-26MB/15MB-17MB-20MB over 18)
+  * com.google.android.googlequicksearchbox / u0a24 / v300405835:
+           TOTAL: 30% (68MB-76MB-90MB/64MB-72MB-86MB over 10)
+             Top: 30% (68MB-76MB-90MB/64MB-72MB-86MB over 10)
+          (Home): 70% (37MB-53MB-58MB/34MB-49MB-54MB over 7)
+  * com.tarikzunic.shootemfast / u0a114 / v1:
+           TOTAL: 28% (32MB-260MB-1,1GB/31MB-258MB-1,1GB over 8)
+             Top: 28% (32MB-260MB-1,1GB/31MB-258MB-1,1GB over 8)
+      (Last Act): 0,12%
+        (Cached): 0,07%
+  * android.process.media / u0a6 / v800:
+           TOTAL: 17% (5,5MB-5,7MB-6,0MB/4,3MB-4,4MB-4,7MB over 4)
+          Imp Fg: 0,01%
+          Imp Bg: 0,01%
+         Service: 17% (5,5MB-5,7MB-6,0MB/4,3MB-4,4MB-4,7MB over 4)
+        (Cached): 83% (6,0MB-6,1MB-6,3MB/4,6MB-4,7MB-4,9MB over 4)
+  * com.google.android.gms:snet / u0a8 / v7329436:
+           TOTAL: 1,2%
+         Service: 1,2%
+      Service Rs: 0,01%
+        (Cached): 5,8% (9,9MB-9,9MB-9,9MB/6,3MB-6,3MB-6,3MB over 1)
+  * com.google.android.apps.plus / u0a71 / v413923288:
+           TOTAL: 0,76%
+          Imp Bg: 0,12%
+         Service: 0,61%
+        Receiver: 0,04%
+        (Cached): 97% (11MB-25MB-33MB/10MB-23MB-31MB over 8)
+  * com.google.android.gms.wearable / u0a8 / v7329436:
+           TOTAL: 0,67%
+          Imp Fg: 0,67%
+        (Cached): 86% (4,2MB-4,8MB-5,2MB/2,2MB-2,4MB-2,5MB over 7)
+  * com.google.android.calendar / u0a33 / v2015030927:
+           TOTAL: 0,47%
+         Service: 0,45%
+        Receiver: 0,02%
+        (Cached): 82% (8,2MB-8,3MB-8,4MB/7,1MB-7,3MB-7,4MB over 6)
+  * com.google.android.gms.unstable / u0a8 / v7329436:
+           TOTAL: 0,30%
+          Imp Fg: 0,22%
+         Service: 0,08%
+        (Cached): 73% (10MB-11MB-11MB/6,2MB-6,3MB-6,4MB over 3)
+  * com.android.defcontainer / u0a5 / v22:
+           TOTAL: 0,20%
+          Imp Fg: 0,19%
+        (Cached): 0,99% (2,8MB-2,8MB-2,8MB/1,7MB-1,7MB-1,7MB over 1)
+  * com.android.providers.calendar / u0a2 / v22:
+           TOTAL: 0,17%
+         Service: 0,17%
+        Receiver: 0,01%
+        (Cached): 82% (3,2MB-3,4MB-3,7MB/2,3MB-2,4MB-2,8MB over 8)
+  * com.google.android.talk / u0a54 / v22347366:
+           TOTAL: 0,09%
+         Service: 0,06%
+        Receiver: 0,03%
+        (Cached): 79% (14MB-14MB-15MB/12MB-13MB-13MB over 4)
+  * com.zentertain.photoeditor:aviary_cds / u0a95 / v10022:
+           TOTAL: 0,09%
+         Service: 0,09%
+        (Cached): 17% (5,4MB-5,4MB-5,4MB/3,7MB-3,7MB-3,7MB over 1)
+  * com.google.android.apps.docs / u0a42 / v51412134:
+           TOTAL: 0,08%
+         Service: 0,02%
+        Receiver: 0,07%
+        (Cached): 8,5% (15MB-15MB-15MB/14MB-14MB-14MB over 2)
+  * com.outfit7.talkingpierrefree / u0a110 / v62:
+           TOTAL: 0,07%
+        Receiver: 0,07%
+        (Cached): 77% (5,5MB-5,6MB-5,6MB/4,6MB-4,6MB-4,6MB over 3)
+  * com.zentertain.photoeditor:aviarycds / u0a95 / v10022:
+           TOTAL: 0,06%
+         Service: 0,06%
+        (Cached): 6,5% (3,6MB-3,6MB-3,6MB/2,0MB-2,0MB-2,0MB over 1)
+  * com.estrongs.android.pop / u0a99 / v225:
+           TOTAL: 0,04%
+        Receiver: 0,03%
+        (Cached): 31% (6,9MB-7,9MB-8,8MB/5,7MB-6,3MB-7,0MB over 4)
+  * com.google.android.apps.magazines / u0a63 / v2015040712:
+           TOTAL: 0,04%
+        Receiver: 0,04%
+        (Cached): 18% (15MB-15MB-15MB/12MB-12MB-12MB over 2)
+  * android.process.acore / u0a4 / v22:
+           TOTAL: 0,03%
+         Service: 0,02%
+        Receiver: 0,02%
+        (Cached): 92% (5,6MB-6,2MB-6,5MB/4,6MB-5,1MB-5,4MB over 7)
+  * com.PuppiesLWPV / u0a111 / v1:
+           TOTAL: 0,02%
+        Receiver: 0,02%
+        (Cached): 78% (17MB-17MB-17MB/16MB-16MB-16MB over 2)
+  * com.aa.generaladaptiveapps / u0a93 / v32:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 16% (4,9MB-4,9MB-5,0MB/4,0MB-4,0MB-4,0MB over 2)
+  * com.google.android.deskclock / u0a40 / v303:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 89% (3,0MB-3,0MB-3,1MB/2,2MB-2,2MB-2,3MB over 4)
+  * com.android.launcher / u0a14 / v22:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 87% (3,9MB-4,3MB-4,6MB/3,0MB-3,1MB-3,2MB over 6)
+  * com.playfirst.dinerdashx / u0a142 / v1940:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 89% (3,2MB-3,6MB-4,0MB/2,3MB-2,7MB-3,1MB over 4)
+  * com.tmsoft.springer / u0a105 / v9:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 8,4% (2,9MB-2,9MB-2,9MB/2,2MB-2,2MB-2,2MB over 2)
+  * com.android.keychain / 1000 / v22:
+           TOTAL: 0,01%
+         Service: 0,01%
+        (Cached): 1,2%
+  * com.imangi.templerun2 / u0a98 / v31:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 8,4% (3,0MB-3,0MB-3,0MB/2,3MB-2,3MB-2,3MB over 2)
+  * com.android.musicfx / u0a17 / v10400:
+           TOTAL: 0,01%
+        (Cached): 8,6% (2,1MB-2,1MB-2,1MB/1,4MB-1,4MB-1,4MB over 2)
+  * com.google.android.apps.cloudprint / u0a37 / v92:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 14% (4,2MB-4,2MB-4,2MB/3,4MB-3,4MB-3,4MB over 2)
+  * com.android.chrome / u0a36 / v2311111:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 16% (5,5MB-5,5MB-5,5MB/4,7MB-4,7MB-4,7MB over 1)
+  * com.google.samples.apps.cardboarddemo / u0a103 / v150331010:
+        (Cached): 18% (2,6MB-2,6MB-2,6MB/1,9MB-1,9MB-1,9MB over 2)
+  * com.google.android.partnersetup / u0a13 / v22:
+        (Cached): 8,4% (2,6MB-2,6MB-2,6MB/1,9MB-1,9MB-1,9MB over 2)
+  * com.google.android.apps.maps / u0a60 / v908101123:
+        (Cached): 89% (16MB-16MB-17MB/15MB-15MB-15MB over 4)
+
+Run time Stats:
+  SOff/Norm: +7m57s767ms
+  SOn /Norm: +29m18s561ms (running)
+       Mod : +9s767ms
+       Low : +1s158ms
+       Crit: +45s505ms
+      TOTAL: +38m12s758ms
+
+Memory usage:
+  Kernel : 150MB (32 samples)
+  Native : 51MB (32 samples)
+  Persist: 145MB (96 samples)
+  Top    : 180MB (91 samples)
+  ImpFg  : 58MB (167 samples)
+  ImpBg  : 23MB (66 samples)
+  Service: 75MB (300 samples)
+  Receivr: 47KB (228 samples)
+  Home   : 37MB (35 samples)
+  LastAct: 53MB (28 samples)
+  CchEmty: 131MB (306 samples)
+  Cached : 271MB (32 samples)
+  Free   : 735MB (32 samples)
+  TOTAL  : 1,9GB
+  ServRst: 22KB (10 samples)
+
+          Start time: 2015-05-10 05:56:06
+  Total elapsed time: +3h25m5s48ms (partial) libart.so
+
+AGGREGATED OVER LAST 24 HOURS:
+  * system / 1000 / v22:
+           TOTAL: 100% (44MB-64MB-78MB/40MB-58MB-72MB over 101)
+      Persistent: 100% (44MB-64MB-78MB/40MB-58MB-72MB over 101)
+  * com.android.systemui / u0a22 / v22:
+           TOTAL: 100% (50MB-73MB-100MB/47MB-68MB-92MB over 100)
+      Persistent: 100% (50MB-73MB-100MB/47MB-68MB-92MB over 100)
+  * com.google.android.googlequicksearchbox:interactor / u0a24 / v300405835:
+           TOTAL: 100% (2,9MB-3,9MB-4,1MB/2,0MB-2,0MB-2,2MB over 103)
+          Imp Fg: 100% (2,9MB-3,9MB-4,1MB/2,0MB-2,0MB-2,2MB over 103)
+  * com.google.android.inputmethod.latin / u0a57 / v21203:
+           TOTAL: 100% (8,2MB-33MB-37MB/6,9MB-30MB-34MB over 102)
+          Imp Fg: 53% (32MB-35MB-37MB/30MB-32MB-34MB over 53)
+          Imp Bg: 47% (8,2MB-31MB-32MB/6,9MB-29MB-30MB over 49)
+  * com.android.nfc / 1027 / v22:
+           TOTAL: 100% (5,0MB-6,3MB-10MB/3,8MB-4,9MB-8,8MB over 101)
+      Persistent: 100% (5,0MB-6,3MB-10MB/3,8MB-4,9MB-8,8MB over 101)
+  * com.android.phone / 1001 / v22:
+           TOTAL: 100% (10MB-14MB-17MB/9,0MB-12MB-15MB over 101)
+      Persistent: 100% (10MB-14MB-17MB/9,0MB-12MB-15MB over 101)
+  * com.google.process.gapps / u0a8 / v7329436:
+           TOTAL: 100% (15MB-20MB-26MB/11MB-15MB-20MB over 103)
+          Imp Fg: 100% (15MB-20MB-26MB/11MB-15MB-20MB over 103)
+          Imp Bg: 0,01%
+  * com.google.android.gms.persistent / u0a8 / v7329436:
+           TOTAL: 100% (20MB-25MB-28MB/18MB-20MB-23MB over 103)
+          Imp Fg: 100% (20MB-25MB-28MB/18MB-20MB-23MB over 103)
+  * com.google.android.googlequicksearchbox:search / u0a24 / v300405835:
+           TOTAL: 100% (18MB-24MB-30MB/14MB-18MB-24MB over 119)
+             Top: 0,03%
+          Imp Fg: 5,1% (18MB-23MB-28MB/15MB-18MB-23MB over 22)
+         Service: 95% (18MB-24MB-30MB/14MB-18MB-24MB over 97)
+  * com.droid27.transparentclockweather / u0a108 / v124:
+           TOTAL: 100% (6,6MB-8,0MB-9,4MB/4,6MB-6,2MB-7,6MB over 86)
+         Service: 100% (6,6MB-8,0MB-9,4MB/4,6MB-6,2MB-7,6MB over 86)
+  * com.viber.voip / u0a100 / v92:
+           TOTAL: 100% (13MB-118MB-161MB/11MB-108MB-147MB over 233)
+             Top: 32% (55MB-134MB-161MB/50MB-122MB-147MB over 172)
+         Service: 68% (13MB-74MB-128MB/11MB-68MB-117MB over 61)
+  * com.android.mms / u0a16 / v22:
+           TOTAL: 94% (6,1MB-6,9MB-7,5MB/4,5MB-5,1MB-5,9MB over 74)
+         Service: 94% (6,1MB-6,9MB-7,5MB/4,5MB-5,1MB-5,9MB over 74)
+  * com.google.android.gm.exchange / u0a73 / v500065:
+           TOTAL: 94% (2,5MB-3,4MB-3,6MB/1,7MB-2,4MB-2,6MB over 72)
+         Service: 94% (2,5MB-3,4MB-3,6MB/1,7MB-2,4MB-2,6MB over 72)
+        (Cached): 0,03%
+  * com.google.android.gms / u0a8 / v7329436:
+           TOTAL: 71% (21MB-106MB-253MB/16MB-100MB-244MB over 280)
+          Imp Fg: 14% (21MB-61MB-160MB/16MB-55MB-150MB over 38)
+          Imp Bg: 0,10% (29MB-29MB-29MB/25MB-25MB-25MB over 1)
+         Service: 57% (22MB-114MB-253MB/17MB-107MB-244MB over 241)
+        (Cached): 29% (12MB-127MB-161MB/8,0MB-118MB-150MB over 108)
+  * com.google.android.googlequicksearchbox / u0a24 / v300405835:
+           TOTAL: 55% (67MB-88MB-112MB/63MB-79MB-103MB over 309)
+             Top: 55% (67MB-88MB-112MB/63MB-79MB-103MB over 309)
+          (Home): 45% (37MB-63MB-78MB/34MB-56MB-69MB over 49)
+  * android.process.media / u0a6 / v800:
+           TOTAL: 21% (4,4MB-6,3MB-13MB/3,3MB-5,1MB-12MB over 30)
+          Imp Fg: 0,01%
+         Service: 21% (4,4MB-6,3MB-13MB/3,3MB-5,1MB-12MB over 30)
+        (Cached): 67% (3,8MB-4,8MB-10MB/2,7MB-3,5MB-9,2MB over 50)
+  * com.tarikzunic.shootemfast / u0a114 / v1:
+           TOTAL: 5,7% (32MB-214MB-1,1GB/31MB-212MB-1,1GB over 44)
+             Top: 5,7% (32MB-214MB-1,1GB/31MB-212MB-1,1GB over 44)
+        (Cached): 8,9% (21MB-41MB-106MB/19MB-39MB-104MB over 9)
+  * com.android.chrome:sandboxed_process0 / u0a36 / v2311111:
+           TOTAL: 3,8% (12MB-130MB-220MB/8,9MB-113MB-196MB over 23)
+             Top: 3,5% (12MB-130MB-220MB/8,9MB-113MB-196MB over 23)
+         Service: 0,29%
+      (Last Act): 1,8% (87MB-128MB-166MB/77MB-110MB-144MB over 6)
+  * com.android.chrome:privileged_process0 / u0a36 / v2311111:
+           TOTAL: 3,8% (20MB-307MB-569MB/17MB-257MB-484MB over 23)
+             Top: 3,5% (20MB-307MB-569MB/17MB-257MB-484MB over 23)
+         Service: 0,29%
+      (Last Act): 1,8% (139MB-361MB-483MB/110MB-303MB-408MB over 6)
+  * com.android.chrome / u0a36 / v2311111:
+           TOTAL: 3,6% (66MB-103MB-165MB/60MB-94MB-155MB over 23)
+             Top: 3,6% (66MB-103MB-165MB/60MB-94MB-155MB over 23)
+         Service: 0,01%
+        Receiver: 0,01%
+      (Last Act): 2,1% (68MB-101MB-116MB/58MB-92MB-106MB over 9)
+        (Cached): 22% (5,5MB-6,0MB-6,9MB/4,7MB-5,0MB-5,8MB over 26)
+  * com.google.android.youtube / u0a83 / v101456133:
+           TOTAL: 3,1% (17MB-18MB-18MB/15MB-15MB-16MB over 20)
+             Top: 2,8% (17MB-18MB-18MB/15MB-15MB-16MB over 20)
+         Service: 0,28%
+      (Last Act): 1,0% (18MB-18MB-18MB/16MB-16MB-16MB over 4)
+        (Cached): 7,1% (17MB-18MB-19MB/15MB-15MB-16MB over 6)
+  * com.mxtech.videoplayer.ad / u0a88 / v1170000084:
+           TOTAL: 2,1% (37MB-47MB-52MB/34MB-44MB-48MB over 12)
+             Top: 2,1% (37MB-47MB-52MB/34MB-44MB-48MB over 12)
+        (Cached): 3,1% (32MB-34MB-37MB/29MB-31MB-34MB over 3)
+  * com.android.chrome:sandboxed_process2 / u0a36 / v2311111:
+           TOTAL: 1,8% (2,8MB-2,8MB-3,0MB/1,7MB-1,7MB-1,7MB over 10)
+             Top: 1,8% (2,8MB-2,8MB-3,0MB/1,7MB-1,7MB-1,7MB over 10)
+         Service: 0,01%
+      (Last Act): 0,75% (2,8MB-2,8MB-2,8MB/1,7MB-1,7MB-1,7MB over 2)
+        (Cached): 2,8% (21MB-23MB-25MB/13MB-15MB-17MB over 2)
+  * com.android.chrome:sandboxed_process3 / u0a36 / v2311111:
+           TOTAL: 1,8% (2,7MB-2,7MB-2,8MB/1,4MB-1,6MB-1,7MB over 12)
+             Top: 1,5% (2,7MB-2,7MB-2,8MB/1,4MB-1,6MB-1,7MB over 12)
+         Service: 0,28%
+      (Last Act): 1,0% (2,7MB-2,7MB-2,7MB/1,6MB-1,6MB-1,6MB over 4)
+  * com.android.vending / u0a18 / v80341200:
+           TOTAL: 1,7% (12MB-13MB-14MB/10MB-11MB-12MB over 10)
+             Top: 1,7% (12MB-13MB-14MB/10MB-11MB-12MB over 10)
+         Service: 0,05%
+        Receiver: 0,01%
+      (Last Act): 0,73% (11MB-11MB-12MB/9,0MB-9,6MB-9,9MB over 3)
+        (Cached): 32% (9,7MB-16MB-57MB/8,1MB-14MB-54MB over 33)
+  * com.yodo1.crossyroad / u0a113 / v33:
+           TOTAL: 1,5% (226MB-257MB-277MB/214MB-245MB-265MB over 8)
+             Top: 1,5% (226MB-257MB-277MB/214MB-245MB-265MB over 8)
+      (Last Act): 0,73% (212MB-234MB-276MB/201MB-222MB-263MB over 3)
+        (Cached): 5,7% (3,2MB-73MB-212MB/2,4MB-69MB-201MB over 3)
+  * com.google.android.apps.plus / u0a71 / v413923288:
+           TOTAL: 0,42%
+          Imp Bg: 0,05%
+         Service: 0,36%
+        Receiver: 0,01%
+        (Cached): 81% (9,8MB-21MB-33MB/8,7MB-20MB-31MB over 82)
+  * com.estrongs.android.pop / u0a99 / v225:
+           TOTAL: 0,41% (61MB-70MB-80MB/55MB-65MB-74MB over 2)
+             Top: 0,41% (61MB-70MB-80MB/55MB-65MB-74MB over 2)
+        Receiver: 0,01%
+        (Cached): 25% (6,8MB-19MB-64MB/5,6MB-17MB-58MB over 34)
+  * com.google.android.calendar / u0a33 / v2015030927:
+           TOTAL: 0,25% (8,3MB-8,3MB-8,3MB/7,4MB-7,4MB-7,4MB over 1)
+          Imp Bg: 0,03%
+         Service: 0,22% (8,3MB-8,3MB-8,3MB/7,4MB-7,4MB-7,4MB over 1)
+        Receiver: 0,01%
+        (Cached): 85% (8,2MB-9,1MB-14MB/7,1MB-7,7MB-12MB over 54)
+  * com.google.android.gms.wearable / u0a8 / v7329436:
+           TOTAL: 0,22%
+          Imp Fg: 0,22%
+        (Cached): 46% (4,0MB-5,0MB-6,3MB/2,2MB-2,5MB-3,3MB over 44)
+  * com.aa.generaladaptiveapps / u0a93 / v32:
+           TOTAL: 0,19% (72MB-72MB-72MB/60MB-60MB-60MB over 1)
+             Top: 0,18% (72MB-72MB-72MB/60MB-60MB-60MB over 1)
+        Receiver: 0,01%
+        (Cached): 16% (4,9MB-7,5MB-56MB/4,0MB-6,1MB-46MB over 21)
+  * com.tmsoft.springer / u0a105 / v9:
+           TOTAL: 0,17% (82MB-82MB-82MB/70MB-70MB-70MB over 1)
+             Top: 0,17% (82MB-82MB-82MB/70MB-70MB-70MB over 1)
+        (Cached): 7,5% (2,9MB-3,0MB-3,1MB/2,1MB-2,2MB-2,3MB over 11)
+  * com.android.providers.calendar / u0a2 / v22:
+           TOTAL: 0,17% (3,8MB-3,9MB-3,9MB/2,8MB-2,8MB-2,9MB over 2)
+          Imp Bg: 0,03%
+         Service: 0,14% (3,8MB-3,9MB-3,9MB/2,8MB-2,8MB-2,9MB over 2)
+        (Cached): 88% (3,0MB-3,5MB-4,2MB/2,1MB-2,4MB-2,9MB over 79)
+  * com.android.defcontainer / u0a5 / v22:
+           TOTAL: 0,14%
+          Imp Fg: 0,13%
+        (Cached): 0,28% (2,8MB-2,8MB-2,8MB/1,7MB-1,7MB-1,7MB over 1)
+  * com.google.android.gms.unstable / u0a8 / v7329436:
+           TOTAL: 0,09%
+          Imp Fg: 0,07%
+         Service: 0,01%
+        (Cached): 12% (8,7MB-9,7MB-11MB/5,7MB-6,1MB-6,4MB over 8)
+  * com.google.android.gms:car / u0a8 / v7329436:
+           TOTAL: 0,06% (4,6MB-4,6MB-4,6MB/2,5MB-2,5MB-2,5MB over 1)
+             Top: 0,01%
+          Imp Fg: 0,05% (4,6MB-4,6MB-4,6MB/2,5MB-2,5MB-2,5MB over 1)
+         Service: 0,01%
+        (Cached): 2,2% (4,5MB-4,5MB-4,5MB/2,4MB-2,4MB-2,4MB over 1)
+  * com.google.android.dialer / u0a10 / v20100:
+           TOTAL: 0,05% (49MB-49MB-49MB/46MB-46MB-46MB over 1)
+             Top: 0,05% (49MB-49MB-49MB/46MB-46MB-46MB over 1)
+        (Cached): 5,5% (4,1MB-19MB-33MB/3,1MB-17MB-30MB over 2)
+  * com.google.android.talk / u0a54 / v22347366:
+           TOTAL: 0,04%
+         Service: 0,04%
+        Receiver: 0,01%
+        (Cached): 63% (13MB-18MB-22MB/11MB-15MB-19MB over 32)
+  * com.ketchapp.zigzaggame / u0a92 / v10:
+           TOTAL: 0,04% (107MB-107MB-107MB/95MB-95MB-95MB over 1)
+             Top: 0,04% (107MB-107MB-107MB/95MB-95MB-95MB over 1)
+  * com.google.android.gms:snet / u0a8 / v7329436:
+           TOTAL: 0,04%
+         Service: 0,04%
+        (Cached): 0,20% (9,9MB-9,9MB-9,9MB/6,3MB-6,3MB-6,3MB over 1)
+  * com.outfit7.talkingpierrefree / u0a110 / v62:
+           TOTAL: 0,04%
+        Receiver: 0,04%
+        (Cached): 22% (5,4MB-5,6MB-5,8MB/4,3MB-4,5MB-4,7MB over 23)
+  * com.google.android.gms.ui / u0a8 / v7329436:
+           TOTAL: 0,03% (42MB-42MB-42MB/38MB-38MB-38MB over 1)
+             Top: 0,03% (42MB-42MB-42MB/38MB-38MB-38MB over 1)
+        (Cached): 3,5% (31MB-37MB-40MB/26MB-32MB-34MB over 3)
+  * com.google.android.apps.docs / u0a42 / v51412134:
+           TOTAL: 0,02%
+         Service: 0,01%
+        Receiver: 0,02%
+        (Cached): 5,3% (15MB-15MB-16MB/13MB-14MB-14MB over 10)
+  * com.google.android.apps.magazines / u0a63 / v2015040712:
+           TOTAL: 0,02%
+        Receiver: 0,02%
+        (Cached): 18% (14MB-15MB-17MB/10MB-12MB-13MB over 19)
+  * android.process.acore / u0a4 / v22:
+           TOTAL: 0,02%
+          Imp Fg: 0,01%
+         Service: 0,01%
+        (Cached): 65% (5,4MB-6,0MB-6,9MB/4,2MB-4,8MB-5,5MB over 60)
+  * system:ui / 1000 / v22:
+           TOTAL: 0,02%
+             Top: 0,02%
+        (Cached): 5,7% (4,2MB-4,6MB-5,0MB/2,8MB-3,0MB-3,1MB over 5)
+  * com.zentertain.photoeditor:aviary_cds / u0a95 / v10022:
+           TOTAL: 0,01%
+         Service: 0,01%
+        (Cached): 15% (3,6MB-4,4MB-5,4MB/2,7MB-3,4MB-4,0MB over 14)
+  * com.google.android.apps.gcs / u0a85 / v14:
+           TOTAL: 0,01%
+         Service: 0,01%
+        (Cached): 33% (3,9MB-5,7MB-7,3MB/2,9MB-4,5MB-5,7MB over 26)
+  * com.google.android.music:main / u0a62 / v1854:
+           TOTAL: 0,01%
+        (Cached): 14% (13MB-13MB-15MB/9,8MB-11MB-12MB over 6)
+  * com.google.android.apps.maps / u0a60 / v908101123:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 52% (13MB-15MB-17MB/12MB-13MB-15MB over 37)
+  * com.google.android.keep / u0a75 / v3118:
+           TOTAL: 0,01%
+          Imp Bg: 0,01%
+        (Cached): 5,1% (8,5MB-9,0MB-10MB/7,1MB-7,6MB-9,1MB over 4)
+  * com.android.printspooler / u0a77 / v1:
+           TOTAL: 0,01%
+          Imp Fg: 0,01%
+        (Cached): 0,01%
+  * com.google.android.gm / u0a74 / v51001817:
+           TOTAL: 0,01%
+          Imp Bg: 0,01%
+        (Cached): 7,0% (11MB-12MB-14MB/10MB-11MB-12MB over 4)
+  * com.zentertain.photoeditor:aviarycds / u0a95 / v10022:
+           TOTAL: 0,01%
+         Service: 0,01%
+        (Cached): 0,27% (3,6MB-3,6MB-3,6MB/2,0MB-2,0MB-2,0MB over 1)
+  * com.google.android.apps.cloudprint / u0a37 / v92:
+           TOTAL: 0,01%
+          Imp Bg: 0,01%
+        (Cached): 13% (3,7MB-4,2MB-4,4MB/1,9MB-3,4MB-3,6MB over 17)
+  * com.google.android.deskclock / u0a40 / v303:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 92% (2,6MB-3,1MB-3,4MB/1,7MB-2,1MB-2,3MB over 57)
+  * com.google.android.apps.cloudprint:sync / u0a37 / v92:
+           TOTAL: 0,01%
+          Imp Bg: 0,01%
+        (Cached): 2,8% (5,9MB-5,9MB-5,9MB/4,0MB-4,0MB-4,0MB over 1)
+  * com.android.musicfx / u0a17 / v10400:
+           TOTAL: 0,01%
+        (Cached): 9,3% (2,1MB-2,5MB-2,9MB/1,4MB-1,7MB-2,2MB over 21)
+  * com.android.cellbroadcastreceiver / u0a3 / v22:
+        (Cached): 0,01%
+  * com.google.android.partnersetup / u0a13 / v22:
+        (Cached): 6,7% (2,4MB-2,5MB-2,6MB/1,7MB-1,7MB-1,9MB over 19)
+  * com.android.keychain / 1000 / v22:
+        (Cached): 2,8% (2,4MB-2,5MB-2,6MB/1,5MB-1,6MB-1,7MB over 14)
+  * com.android.launcher / u0a14 / v22:
+        (Cached): 22% (3,5MB-4,1MB-5,0MB/2,4MB-2,9MB-3,2MB over 22)
+  * com.imangi.templerun2 / u0a98 / v31:
+        (Cached): 5,7% (3,0MB-3,1MB-3,1MB/2,3MB-2,3MB-2,4MB over 14)
+  * com.playfirst.dinerdashx / u0a142 / v1940:
+        (Cached): 73% (3,2MB-4,0MB-5,2MB/2,3MB-2,9MB-4,3MB over 46)
+  * com.google.android.videos / u0a80 / v37201:
+        (Cached): 2,7% (11MB-11MB-11MB/10MB-10MB-10MB over 1)
+  * com.PuppiesLWPV / u0a111 / v1:
+        (Cached): 2,8% (17MB-17MB-17MB/16MB-16MB-16MB over 2)
+  * com.google.samples.apps.cardboarddemo / u0a103 / v150331010:
+        (Cached): 11% (2,6MB-2,7MB-2,7MB/1,9MB-1,9MB-2,0MB over 11)
+  * com.google.android.apps.genie.geniewidget / u0a76 / v23003800:
+        (Cached): 4,0% (4,3MB-4,5MB-4,7MB/3,5MB-3,5MB-3,5MB over 2)
+  * com.namcobandaigames.pacmantournaments / u0a135 / v107:
+        (Cached): 5,6% (2,9MB-3,2MB-3,5MB/2,1MB-2,4MB-2,7MB over 2)
+  * com.google.android.configupdater / u0a38 / v22:
+        (Cached): 2,7% (3,0MB-3,0MB-3,0MB/2,3MB-2,3MB-2,3MB over 1)
+  * com.android.settings / 1000 / v22:
+        (Cached): 0,03%
+  * com.google.android.marvin.talkback / u0a28 / v40100005:
+        (Cached): 4,0% (3,1MB-3,3MB-3,5MB/2,4MB-2,4MB-2,4MB over 2)
+  * com.android.chrome:sandboxed_process1 / u0a36 / v2311111:
+  * com.kiloo.subwaysurf / u0a126 / v63:
+        (Cached): 0,60% (3,6MB-3,6MB-3,6MB/2,7MB-2,7MB-2,7MB over 1)
+  * com.google.android.onetimeinitializer / u0a12 / v22:
+        (Cached): 0,01%
+  * com.android.providers.partnerbookmarks / u0a67 / v22:
+        (Cached): 0,04%
+  * com.android.sharedstoragebackup / u0a21 / v22:
+        (Cached): 2,9% (2,1MB-2,2MB-2,4MB/1,4MB-1,4MB-1,4MB over 2)
+  * com.android.managedprovisioning / u0a15 / v22:
+        (Cached): 0,01%
+  * com.SpringLiveWallpaperHD / u0a107 / v19:
+        (Cached): 0,05% (2,3MB-2,3MB-2,3MB/1,6MB-1,6MB-1,6MB over 1)
+
+Run time Stats:
+  SOff/Norm: +15h44m3s25ms
+       Crit: +1m21s241ms
+  SOn /Norm: +2h32m15s237ms
+       Mod : +22s417ms
+       Low : +24s503ms
+       Crit: +47s37ms
+      TOTAL: +18h19m13s460ms
+
+Memory usage:
+  Kernel : 156MB (152 samples)
+  Native : 59MB (152 samples)
+  Persist: 161MB (806 samples)
+  Top    : 129MB (1310 samples)
+  ImpFg  : 75MB (2231 samples)
+  ImpBg  : 15MB (1587 samples)
+  Backup : 52 (76 samples)
+  Service: 159MB (3730 samples)
+  Receivr: 31KB (3043 samples)
+  Home   : 30MB (196 samples)
+  LastAct: 13MB (130 samples)
+  CchAct : 327KB (1 samples)
+  CchCAct: 662KB (3 samples)
+  CchEmty: 142MB (2815 samples)
+  Cached : 401MB (152 samples)
+  Free   : 482MB (152 samples)
+  TOTAL  : 1,8GB
+  ServRst: 3,0KB (365 samples)
+
+          Start time: 2015-05-09 08:02:06
+  Total elapsed time: +1d1h19m4s971ms (partial) libart.so
+
+AGGREGATED OVER LAST 3 HOURS:
+  * com.google.android.googlequicksearchbox:search / u0a24 / v300405835:
+           TOTAL: 100% (18MB-20MB-21MB/14MB-16MB-19MB over 12)
+          Imp Fg: 9,3% (19MB-20MB-21MB/15MB-17MB-19MB over 4)
+         Service: 91% (18MB-19MB-21MB/14MB-15MB-18MB over 8)
+  * com.google.android.googlequicksearchbox:interactor / u0a24 / v300405835:
+           TOTAL: 100% (2,9MB-3,3MB-3,5MB/2,2MB-2,2MB-2,2MB over 9)
+          Imp Fg: 100% (2,9MB-3,3MB-3,5MB/2,2MB-2,2MB-2,2MB over 9)
+  * com.android.phone / 1001 / v22:
+           TOTAL: 100% (10MB-12MB-15MB/9,3MB-11MB-14MB over 8)
+      Persistent: 100% (10MB-12MB-15MB/9,3MB-11MB-14MB over 8)
+  * com.android.systemui / u0a22 / v22:
+           TOTAL: 100% (62MB-66MB-76MB/59MB-63MB-73MB over 8)
+      Persistent: 100% (62MB-66MB-76MB/59MB-63MB-73MB over 8)
+  * system / 1000 / v22:
+           TOTAL: 100% (54MB-62MB-78MB/50MB-58MB-72MB over 8)
+      Persistent: 100% (54MB-62MB-78MB/50MB-58MB-72MB over 8)
+  * com.viber.voip / u0a100 / v92:
+           TOTAL: 100% (14MB-43MB-103MB/12MB-40MB-95MB over 8)
+         Service: 100% (14MB-43MB-103MB/12MB-40MB-95MB over 8)
+      Service Rs: 0,05%
+  * com.droid27.transparentclockweather / u0a108 / v124:
+           TOTAL: 100% (6,8MB-7,6MB-8,4MB/5,6MB-6,3MB-7,1MB over 8)
+         Service: 100% (6,8MB-7,6MB-8,4MB/5,6MB-6,3MB-7,1MB over 8)
+  * com.google.android.gms.persistent / u0a8 / v7329436:
+           TOTAL: 100% (20MB-21MB-21MB/18MB-18MB-19MB over 9)
+          Imp Fg: 100% (20MB-21MB-21MB/18MB-18MB-19MB over 9)
+  * com.google.android.inputmethod.latin / u0a57 / v21203:
+           TOTAL: 100% (29MB-31MB-34MB/28MB-29MB-32MB over 9)
+          Imp Fg: 22% (34MB-34MB-34MB/32MB-32MB-32MB over 3)
+          Imp Bg: 78% (29MB-30MB-30MB/28MB-28MB-28MB over 6)
+  * com.google.process.gapps / u0a8 / v7329436:
+           TOTAL: 100% (17MB-17MB-18MB/15MB-15MB-16MB over 9)
+          Imp Fg: 100% (17MB-17MB-18MB/15MB-15MB-16MB over 9)
+  * com.android.nfc / 1027 / v22:
+           TOTAL: 100% (5,0MB-8,4MB-10MB/4,1MB-7,3MB-8,8MB over 8)
+      Persistent: 100% (5,0MB-8,4MB-10MB/4,1MB-7,3MB-8,8MB over 8)
+  * com.android.vending / u0a18 / v80341200:
+           TOTAL: 42% (12MB-13MB-13MB/10MB-11MB-11MB over 8)
+             Top: 42% (12MB-13MB-13MB/10MB-11MB-11MB over 8)
+          Imp Fg: 0,01%
+         Service: 0,44%
+        Receiver: 0,01%
+      (Last Act): 21% (11MB-11MB-12MB/9,0MB-9,6MB-9,9MB over 3)
+        (Cached): 37% (9,7MB-12MB-14MB/8,1MB-10MB-13MB over 2)
+  * com.yodo1.crossyroad / u0a113 / v33:
+           TOTAL: 42% (226MB-257MB-277MB/214MB-245MB-265MB over 8)
+             Top: 42% (226MB-257MB-277MB/214MB-245MB-265MB over 8)
+      (Last Act): 21% (212MB-234MB-276MB/201MB-222MB-263MB over 3)
+        (Cached): 4,3% (212MB-212MB-212MB/201MB-201MB-201MB over 1)
+  * com.google.android.gms / u0a8 / v7329436:
+           TOTAL: 32% (21MB-25MB-30MB/16MB-21MB-26MB over 9)
+             Top: 0,01%
+          Imp Fg: 29% (21MB-25MB-30MB/16MB-21MB-26MB over 9)
+          Imp Bg: 0,10%
+         Service: 2,6%
+        Receiver: 0,01%
+        (Cached): 67% (20MB-22MB-26MB/15MB-17MB-20MB over 18)
+  * com.google.android.googlequicksearchbox / u0a24 / v300405835:
+           TOTAL: 30% (68MB-76MB-90MB/64MB-72MB-86MB over 10)
+             Top: 30% (68MB-76MB-90MB/64MB-72MB-86MB over 10)
+          (Home): 70% (37MB-53MB-58MB/34MB-49MB-54MB over 7)
+  * com.tarikzunic.shootemfast / u0a114 / v1:
+           TOTAL: 28% (32MB-260MB-1,1GB/31MB-258MB-1,1GB over 8)
+             Top: 28% (32MB-260MB-1,1GB/31MB-258MB-1,1GB over 8)
+      (Last Act): 0,12%
+        (Cached): 0,07%
+  * android.process.media / u0a6 / v800:
+           TOTAL: 17% (5,5MB-5,7MB-6,0MB/4,3MB-4,4MB-4,7MB over 4)
+          Imp Fg: 0,01%
+          Imp Bg: 0,01%
+         Service: 17% (5,5MB-5,7MB-6,0MB/4,3MB-4,4MB-4,7MB over 4)
+        (Cached): 83% (6,0MB-6,1MB-6,3MB/4,6MB-4,7MB-4,9MB over 4)
+  * com.google.android.gms:snet / u0a8 / v7329436:
+           TOTAL: 1,2%
+         Service: 1,2%
+      Service Rs: 0,01%
+        (Cached): 5,8% (9,9MB-9,9MB-9,9MB/6,3MB-6,3MB-6,3MB over 1)
+  * com.google.android.apps.plus / u0a71 / v413923288:
+           TOTAL: 0,76%
+          Imp Bg: 0,12%
+         Service: 0,61%
+        Receiver: 0,04%
+        (Cached): 97% (11MB-25MB-33MB/10MB-23MB-31MB over 8)
+  * com.google.android.gms.wearable / u0a8 / v7329436:
+           TOTAL: 0,67%
+          Imp Fg: 0,67%
+        (Cached): 86% (4,2MB-4,8MB-5,2MB/2,2MB-2,4MB-2,5MB over 7)
+  * com.google.android.calendar / u0a33 / v2015030927:
+           TOTAL: 0,47%
+         Service: 0,45%
+        Receiver: 0,02%
+        (Cached): 82% (8,2MB-8,3MB-8,4MB/7,1MB-7,3MB-7,4MB over 6)
+  * com.google.android.gms.unstable / u0a8 / v7329436:
+           TOTAL: 0,30%
+          Imp Fg: 0,22%
+         Service: 0,08%
+        (Cached): 73% (10MB-11MB-11MB/6,2MB-6,3MB-6,4MB over 3)
+  * com.android.defcontainer / u0a5 / v22:
+           TOTAL: 0,20%
+          Imp Fg: 0,19%
+        (Cached): 0,99% (2,8MB-2,8MB-2,8MB/1,7MB-1,7MB-1,7MB over 1)
+  * com.android.providers.calendar / u0a2 / v22:
+           TOTAL: 0,17%
+         Service: 0,17%
+        Receiver: 0,01%
+        (Cached): 82% (3,2MB-3,4MB-3,7MB/2,3MB-2,4MB-2,8MB over 8)
+  * com.google.android.talk / u0a54 / v22347366:
+           TOTAL: 0,09%
+         Service: 0,06%
+        Receiver: 0,03%
+        (Cached): 79% (14MB-14MB-15MB/12MB-13MB-13MB over 4)
+  * com.zentertain.photoeditor:aviary_cds / u0a95 / v10022:
+           TOTAL: 0,09%
+         Service: 0,09%
+        (Cached): 17% (5,4MB-5,4MB-5,4MB/3,7MB-3,7MB-3,7MB over 1)
+  * com.google.android.apps.docs / u0a42 / v51412134:
+           TOTAL: 0,08%
+         Service: 0,02%
+        Receiver: 0,07%
+        (Cached): 8,5% (15MB-15MB-15MB/14MB-14MB-14MB over 2)
+  * com.outfit7.talkingpierrefree / u0a110 / v62:
+           TOTAL: 0,07%
+        Receiver: 0,07%
+        (Cached): 77% (5,5MB-5,6MB-5,6MB/4,6MB-4,6MB-4,6MB over 3)
+  * com.zentertain.photoeditor:aviarycds / u0a95 / v10022:
+           TOTAL: 0,06%
+         Service: 0,06%
+        (Cached): 6,5% (3,6MB-3,6MB-3,6MB/2,0MB-2,0MB-2,0MB over 1)
+  * com.estrongs.android.pop / u0a99 / v225:
+           TOTAL: 0,04%
+        Receiver: 0,03%
+        (Cached): 31% (6,9MB-7,9MB-8,8MB/5,7MB-6,3MB-7,0MB over 4)
+  * com.google.android.apps.magazines / u0a63 / v2015040712:
+           TOTAL: 0,04%
+        Receiver: 0,04%
+        (Cached): 18% (15MB-15MB-15MB/12MB-12MB-12MB over 2)
+  * android.process.acore / u0a4 / v22:
+           TOTAL: 0,03%
+         Service: 0,02%
+        Receiver: 0,02%
+        (Cached): 92% (5,6MB-6,2MB-6,5MB/4,6MB-5,1MB-5,4MB over 7)
+  * com.PuppiesLWPV / u0a111 / v1:
+           TOTAL: 0,02%
+        Receiver: 0,02%
+        (Cached): 78% (17MB-17MB-17MB/16MB-16MB-16MB over 2)
+  * com.aa.generaladaptiveapps / u0a93 / v32:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 16% (4,9MB-4,9MB-5,0MB/4,0MB-4,0MB-4,0MB over 2)
+  * com.google.android.deskclock / u0a40 / v303:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 89% (3,0MB-3,0MB-3,1MB/2,2MB-2,2MB-2,3MB over 4)
+  * com.android.launcher / u0a14 / v22:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 87% (3,9MB-4,3MB-4,6MB/3,0MB-3,1MB-3,2MB over 6)
+  * com.playfirst.dinerdashx / u0a142 / v1940:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 89% (3,2MB-3,6MB-4,0MB/2,3MB-2,7MB-3,1MB over 4)
+  * com.android.keychain / 1000 / v22:
+           TOTAL: 0,01%
+         Service: 0,01%
+        (Cached): 1,2%
+  * com.tmsoft.springer / u0a105 / v9:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 8,4% (2,9MB-2,9MB-2,9MB/2,2MB-2,2MB-2,2MB over 2)
+  * com.imangi.templerun2 / u0a98 / v31:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 8,4% (3,0MB-3,0MB-3,0MB/2,3MB-2,3MB-2,3MB over 2)
+  * com.android.musicfx / u0a17 / v10400:
+           TOTAL: 0,01%
+        (Cached): 8,6% (2,1MB-2,1MB-2,1MB/1,4MB-1,4MB-1,4MB over 2)
+  * com.google.android.apps.cloudprint / u0a37 / v92:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 14% (4,2MB-4,2MB-4,2MB/3,4MB-3,4MB-3,4MB over 2)
+  * com.android.chrome / u0a36 / v2311111:
+           TOTAL: 0,01%
+        Receiver: 0,01%
+        (Cached): 16% (5,5MB-5,5MB-5,5MB/4,7MB-4,7MB-4,7MB over 1)
+  * com.google.samples.apps.cardboarddemo / u0a103 / v150331010:
+        (Cached): 18% (2,6MB-2,6MB-2,6MB/1,9MB-1,9MB-1,9MB over 2)
+  * com.google.android.partnersetup / u0a13 / v22:
+        (Cached): 8,5% (2,6MB-2,6MB-2,6MB/1,9MB-1,9MB-1,9MB over 2)
+  * com.google.android.apps.maps / u0a60 / v908101123:
+        (Cached): 89% (16MB-16MB-17MB/15MB-15MB-15MB over 4)
+
+Run time Stats:
+  SOff/Norm: +7m57s767ms
+  SOn /Norm: +29m18s886ms
+       Mod : +9s767ms
+       Low : +1s158ms
+       Crit: +45s505ms
+      TOTAL: +38m13s83ms
+
+Memory usage:
+  Kernel : 150MB (32 samples)
+  Native : 51MB (32 samples)
+  Persist: 145MB (96 samples)
+  Top    : 180MB (91 samples)
+  ImpFg  : 58MB (167 samples)
+  ImpBg  : 23MB (66 samples)
+  Service: 75MB (311 samples)
+  Receivr: 53KB (252 samples)
+  Home   : 37MB (35 samples)
+  LastAct: 53MB (32 samples)
+  CchAct : 9,2MB (1 samples)
+  CchCAct: 430KB (1 samples)
+  CchEmty: 135MB (321 samples)
+  Cached : 271MB (32 samples)
+  Free   : 735MB (32 samples)
+  TOTAL  : 1,9GB
+  ServRst: 22KB (10 samples)
+
+          Start time: 2015-05-10 05:56:06
+  Total elapsed time: +3h25m5s299ms (partial) libart.so
