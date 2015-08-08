@@ -38,4 +38,8 @@ public class Advertising {
             interstitialAd.show();
         }
     }
+
+    public void destroy() {
+
+    }
 }

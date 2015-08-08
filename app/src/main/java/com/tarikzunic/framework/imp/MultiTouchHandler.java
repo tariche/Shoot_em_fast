@@ -84,6 +84,7 @@ public class MultiTouchHandler implements TouchHandler {
                         touchEvent.y = touchY[i] = (int) (event.getY() * scaleY);
                         isTouched[i] = true;
                         id[i] = poiterId;
+                        touchEventsBuffer.add(touchEvent);
                         break;
                 }
             }

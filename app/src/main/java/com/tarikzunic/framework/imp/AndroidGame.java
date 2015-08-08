@@ -7,11 +7,8 @@ import android.graphics.Point;
 import android.os.Build.VERSION;
 import android.os.Bundle;
 import android.os.Looper;
-import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
@@ -45,10 +42,11 @@ public abstract class AndroidGame extends Activity implements Game {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
         decor = getWindow().getDecorView();
-        uiOptions = View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
-
+        uiOptions = View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
+                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
+        decor.setSystemUiVisibility(uiOptions);
 
         boolean isPortrait = getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT;
         int frameBufferWidth = isPortrait ? 480 : 800;
@@ -94,6 +92,14 @@ public abstract class AndroidGame extends Activity implements Game {
     }
 
     @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            decor.setSystemUiVisibility(uiOptions);
+        }
+    }
+
+    @Override
     protected void onResume() {
         super.onResume();
         decor.setSystemUiVisibility(uiOptions);
@@ -111,6 +117,7 @@ public abstract class AndroidGame extends Activity implements Game {
         screen.pause();
 
         if (isFinishing())
+            adView.destroy();
             screen.dispose();
     }
 
